@@ -1,8 +1,8 @@
-# !!!Replace with your unique project name!!!
+Promblamatic Eyes
 
 ## Description
 
-!!!Replace with a description of what your program does!!!
+Identifies whether or not a set of colors to a degree is problamatic for thos with color blindness
 
 ### v0.2 Updates
 
@@ -15,7 +15,7 @@
 
 ## Developer
 
-!!!Replace with your name!!!
+Larkin Koker
 
 ## Example
 
@@ -29,30 +29,33 @@ g++ --std=c++11 *.cpp -o cvp
 Here is an example of the program running:
 
 ```
-!!!Replace with an example of the program running with user interaction!!!
+Enter file you want to open:
+
+file appears safe for coloblind individual
+
+Enter new file (y/n)? 
 ```
 
 ## C++ Guide
 
 ### Variables and Data Types
 
-!!!Replace with a summary and examples of how multiple variables have been used with a variety of data types and why they have been used effectively and appropriately!!!
-
+string, bitmap, pixel, char and vector data types and variables are used to collect and store the data of the bitmaps and user input.
 ### Console Input and Output
 
-!!!Replace with a summary and examples of how input and output have been used effectively and appropriately!!!
+User inputs a bitmap file that they want to use and the program outputs wheter the bitmap is safe for or not to colorblind people
 
 ### Decisions
 
-!!!Replace with a summary and examples of how multiple decision constructs have been used effectively and appropriately!!!
+The program will make decisions on if a images colo combination is safe or not.
 
 ### Iteration
 
-!!!Replace with a summary and examples of how iteration has been used effectively and appropriately!!!
+If the pixel colors do not reflect the pixels required for certain coloblind combinations, i.e. red green coloblind and so on, then the image is safe, if it does it is not. then the program will repeat unless told not to continue
 
 ### File Input and Output
 
-!!!Replace with a summary and examples of how input and/or output of files have been used effectively and appropriately!!!
+User inputs a bitmap file that they want to use and the program outputs wheter the bitmap is safe for or not to colorblind people
 
 ### Arrays/Vectors
 
