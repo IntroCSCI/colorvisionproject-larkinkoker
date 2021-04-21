@@ -7,6 +7,7 @@ using namespace std;
 bool imageValidator(bool, Bitmap);
 bool redDetect(Pixel, vector<vector<Pixel>>, bool);
 bool greenDetect(Pixel, vector<vector<Pixel>>, bool);
+void redgreenColorblindtest(bool,bool,vector<vector<Pixel>>, Pixel);
 
 int main()
 {
@@ -21,6 +22,9 @@ int main()
  do{
    cout<<"What file do you want to open (or 'no' to quit)?"<<endl;
    getline(cin, fileName);
+   
+   if(fileName!="no"){
+   
    image.open(fileName);
    validImage=imageValidator(validImage, image);
    
@@ -41,8 +45,11 @@ int main()
      cout<<"What file do you want to open (or 'no' to quit)?"<<endl;
    getline(cin, fileName);
    }
+   }else{
+     cout<<"Oh, no file? Don't waste my time then...jackass."<<endl;
+   }
 
- }while (fileName !="no");
+ }while (fileName != "no");
 
 
 
@@ -79,3 +86,14 @@ bool greenDetect(Pixel rgb, vector<vector<Pixel>>bmp, bool g){
   return g;
 }
 
+void redgreenColorblindtest(bool red,bool green,vector<vector<Pixel>> bmp, Pixel rgb){
+    red=redDetect(rgb,bmp,red);
+     green=greenDetect(rgb,bmp,green);
+     if(red==true&&green==true){
+    cout<<"Red and green have been detected. Red/Green colorblindness is a common form of colorblindness meaning this image is dangerous to colorblind humans."<<endl;
+    }else{
+      cout<<"No red or green detected. Image is safe for Red/Green colorblind people."<<endl;
+    }
+
+
+}
