@@ -30,16 +30,8 @@ int main()
    
    
    if(validImage==true){
-     bmp=image.toPixelMatrix();
-     
-     red=redDetect(rgb,bmp,red);
-     green=greenDetect(rgb,bmp,green);
-
-    if(red==true&&green==true){
-    cout<<"Red and green have been detected. Red/Green colorblindness is a common form of colorblindness meaning this image is dangerous to colorblind humans."<<endl;
-    }else{
-      cout<<"No red or green detected. Image is safe for Red/Green colorblind people."<<endl;
-    }
+    bmp=image.toPixelMatrix();
+    redgreenColorblindtest(red,green,bmp,rgb);
 
    }else{
      cout<<"What file do you want to open (or 'no' to quit)?"<<endl;
@@ -65,24 +57,25 @@ bool imageValidator(bool a, Bitmap image){
 bool redDetect(Pixel rgb, vector<vector<Pixel> > bmp,bool r){
   for(int i=0; i<bmp.size();i++){
   bmp[i][i] = rgb;
+  }
   if(rgb.red>rgb.green&&rgb.red>rgb.blue){
   r= true;
-  }else{
-  r=false;
-  }
+  return r;
   }
   return r;
 }
 
+
 bool greenDetect(Pixel rgb, vector<vector<Pixel>>bmp, bool g){
  for(int i=0; i<bmp.size();i++){
-  bmp[i][i] = rgb;
+  rgb=bmp[i][i];
+ }
   if(rgb.red<rgb.green&&rgb.green>rgb.blue){
   g= true;
-  }else{
-  g=false;
+  return g;
   }
- }
+ 
+ 
   return g;
 }
 
