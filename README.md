@@ -6,7 +6,9 @@ Identifies whether or not a set of colors to a degree is problamatic for thos wi
 
 ### v0.2 Updates
 
-*Coming soon*
+Added detection capabilities for red green colorblindness
+README.md updated
+Added bitmap.cppfile
 
 ### v1.0 Updates
 
@@ -29,41 +31,41 @@ g++ --std=c++11 *.cpp -o cvp
 Here is an example of the program running:
 
 ```
-Enter file you want to open:
+What file do you want to open (or 'no' to quit)?
 
-file appears safe for coloblind individual
+Red and green have been detected. Red/Green colorblindness is a common form of colorblindness meaning this image is dangerous to colorblind humans.
 
-Enter new file (y/n)? 
+What file do you want to open (or 'no' to quit)?
 ```
 
 ## C++ Guide
 
 ### Variables and Data Types
 
-string, bitmap, pixel, char and vector data types and variables are used to collect and store the data of the bitmaps and user input.
+string, bitmap, pixel, char and vector data types and variables are used to collect and store the data of the bitmaps and user input. Bools are also used to dictate the way the program will function.
 ### Console Input and Output
 
 User inputs a bitmap file that they want to use and the program outputs wheter the bitmap is safe for or not to colorblind people
 
 ### Decisions
 
-The program will make decisions on if a images colo combination is safe or not.
+The program will make decisions using if statements containing bools to decide if a images color combination is safe or not.
 
 ### Iteration
 
-If the pixel colors do not reflect the pixels required for certain coloblind combinations, i.e. red green coloblind and so on, then the image is safe, if it does it is not. then the program will repeat unless told not to continue
+The program uses a do while loop to make the program functions repeatable as well as decision making with if and else if statements.
 
 ### File Input and Output
 
-User inputs a bitmap file that they want to use and the program outputs wheter the bitmap is safe for or not to colorblind people
+User inputs a bitmap file that they want to use and after analyzing the pixels in the file, the program outputs statements wheter the bitmap is safe for or not to colorblind people.
 
 ### Arrays/Vectors
 
-*Coming in version 0.2*
+There is a vector for the individual Pixel which contains an red, green and blue value as well as a vector of the Pixel vector that contains number of Pixels in a bitmap file.
 
 ### Functions
 
-*Coming in version 0.2*
+There are 2 bool functions, one for  detecting shades of red and one for shades of green with bool as the return type and variables defined in int main. There is alse a void function that takes the bools and if both return as true, puts out a statement declaring that red and green have been detected and could be problamatic to those that suffer from red green colorblindness. 
 
 ### Classes
 

@@ -38,7 +38,7 @@ int main()
    getline(cin, fileName);
    }
    }else{
-     cout<<"Oh, no file? Don't waste my time then...jackass."<<endl;
+     cout<<"Oh, no file? Don't waste my time then."<<endl;
    }
 
  }while (fileName != "no");
@@ -56,11 +56,13 @@ bool imageValidator(bool a, Bitmap image){
 }
 bool redDetect(Pixel rgb, vector<vector<Pixel> > bmp,bool r){
   for(int i=0; i<bmp.size();i++){
-  bmp[i][i] = rgb;
+ rgb=bmp[i][i];
   }
   if(rgb.red>rgb.green&&rgb.red>rgb.blue){
   r= true;
   return r;
+  }else{
+    r= false;
   }
   return r;
 }
@@ -73,6 +75,8 @@ bool greenDetect(Pixel rgb, vector<vector<Pixel>>bmp, bool g){
   if(rgb.red<rgb.green&&rgb.green>rgb.blue){
   g= true;
   return g;
+  }else{
+    g= false;
   }
  
  
