@@ -5,7 +5,7 @@
 using namespace std;
 
 bool imageValidator(bool, Bitmap);
-bool redDetect(Pixel, vector<vector<Pixel>>, bool);
+bool redDetect(Pixel , vector<vector<Pixel>> , bool );
 bool greenDetect(Pixel, vector<vector<Pixel>>, bool);
 void redgreenColorblindtest(bool,bool,vector<vector<Pixel>>, Pixel);
 
@@ -43,18 +43,14 @@ int main()
 
  }while (fileName != "no");
 
-
-
-
-
-  return 0;
+ return 0;
 }
 
 bool imageValidator(bool a, Bitmap image){
   a = image.isImage();
   return a;
 }
-bool redDetect(Pixel rgb, vector<vector<Pixel> > bmp,bool r){
+bool redDetect(Pixel rgb , vector<vector<Pixel> > bmp ,bool r ){
   for(int i=0; i<bmp.size();i++){
  rgb=bmp[i][i];
   }

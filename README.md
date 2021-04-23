@@ -65,7 +65,7 @@ There is a vector for the individual Pixel which contains an red, green and blue
 
 ### Functions
 
-There are 2 bool functions, one for  detecting shades of red and one for shades of green with bool as the return type and variables defined in int main. There is alse a void function that takes the bools and if both return as true, puts out a statement declaring that red and green have been detected and could be problamatic to those that suffer from red green colorblindness. 
+There are 2 bool functions, one for  detecting shades of red and one for shades of green with bool as the return type and variables defined in int main. There is alse a void function that takes the bools and if both return as true, puts out a statement declaring that red and green have been detected and could be problamatic to those that suffer from red green colorblindness. There is also bool function that decides whether the image is valid. All prototypes are at the top befor int main and the definitions below return 0}.
 
 ### Classes
 
