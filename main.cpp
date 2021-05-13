@@ -37,7 +37,7 @@ int main()
     green=greenDetect(rgb,bmp,green);
     blind.responseRED(red);
     blind.responseGREEN(green);
-    blind.responeREDnGREEN(red, green);
+    blind.responseREDnGREEN(red, green);
     
     
 

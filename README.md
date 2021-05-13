@@ -11,8 +11,10 @@ README.md updated
 Added bitmap.cppfile
 
 ### v1.0 Updates
+Added Response Class
+README.md updated
+Created response.h and response.cpp
 
-*Coming soon*
 
 
 ## Developer
@@ -65,8 +67,8 @@ There is a vector for the individual Pixel which contains an red, green and blue
 
 ### Functions
 
-There are 2 bool functions, one for  detecting shades of red and one for shades of green with bool as the return type and variables defined in int main. There is alse a void function that takes the bools and if both return as true, puts out a statement declaring that red and green have been detected and could be problamatic to those that suffer from red green colorblindness. There is also bool function that decides whether the image is valid. All prototypes are at the top befor int main and the definitions below return 0}.
+There are 2 bool functions, one for  detecting shades of red and one for shades of green with bool as the return type and variables defined in int main. The new class called Response contains 3 void functions that declare the presence of green and red as well as determines the degree at which the person will be affected.  All prototypes are at the top befor int main and the definitions below return 0}.
 
 ### Classes
 
-*Coming in version 1.0*
+A class titled Response has been created. The class incldes 2 bool variables, g and r, in the private domain. It includes 3 void functions that can be used by the public. The class serves to store the responses for the results of the red and green tests. The responses are called in main.cpp through blind.____ references that run the void functions within the class. 

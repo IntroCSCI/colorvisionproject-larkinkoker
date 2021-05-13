@@ -31,7 +31,7 @@ void Response::responseREDnGREEN(bool red, bool green){
   if(r==true&&g==true){
     cout<<"Green and red have both been detected. This can cause problems for those that suffer from Red/Green Colorblindness."<<endl;
   }else{
-    cout<<"This file appears safe for those that suffer from Red/"
+    cout<<"This file appears safe for those that suffer from Red/Green colorblindness."<<endl;
   }
 }
 
