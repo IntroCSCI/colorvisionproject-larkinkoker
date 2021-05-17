@@ -5,9 +5,13 @@
 #include "libraries/response.h"
 using namespace std;
 
+
+
 bool imageValidator(bool, Bitmap);
 bool redDetect(Pixel , vector<vector<Pixel>> , bool );
 bool greenDetect(Pixel , vector<vector<Pixel>>, bool );
+
+
 
 
 int main()
@@ -53,6 +57,11 @@ int main()
 
  return 0;
 }
+
+
+
+
+
 
 bool imageValidator(bool a, Bitmap image){
   a = image.isImage();

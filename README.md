@@ -44,10 +44,10 @@ What file do you want to open (or 'no' to quit)?
 
 ### Variables and Data Types
 
-string, bitmap, pixel, char and vector data types and variables are used to collect and store the data of the bitmaps and user input. Bools are also used to dictate the way the program will function.
+String, bitmap, pixel, char and vector data types and variables are used to collect and store the data of the bitmaps and user input. Bools are also used to dictate the way the program will function.
 ### Console Input and Output
 
-User inputs a bitmap file that they want to use and the program outputs wheter the bitmap is safe for or not to colorblind people
+User inputs a bitmap file that they want to use and the program outputs wheter the bitmap is safe for or not to colorblind people.
 
 ### Decisions
 
@@ -67,7 +67,7 @@ There is a vector for the individual Pixel which contains an red, green and blue
 
 ### Functions
 
-There are 2 bool functions, one for  detecting shades of red and one for shades of green with bool as the return type and variables defined in int main. The new class called Response contains 3 void functions that declare the presence of green and red as well as determines the degree at which the person will be affected.  All prototypes are at the top befor int main and the definitions below return 0}.
+There are 2 bool functions, one for  detecting shades of red and one for shades of green with bool as the return type and variables defined in int main. The new class called Response contains 3 void functions that declare the presence of green and red as well as determines the degree at which the person will be affected.  All prototypes are at the top befor int main and the definitions below return 0.
 
 ### Classes
 
